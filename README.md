@@ -93,7 +93,7 @@
    #3. Scroll ke bagian bawah dan pilih menu Developer settings
    #4. Pilih Personal access tokens
    #5. Pilih Generate new tokens
-   #6. Tuliskan note untuk token anda (ex: Token for Lab-Mobile-2024)
+   #6. Tuliskan note untuk token anda (ex: Token for Lab-Basis-Data-2024)
    #7. Atur waktu expiration token anda (sesuai keinginan anda)
    #8. Pada select scope, ceklis box repo
    #9. Klik generate new token
