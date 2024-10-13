@@ -4,7 +4,7 @@ SELECT * FROM authors;
 INSERT INTO authors (NAME, nationality) 
 VALUES ('Tare Liye', 'indonesia'),
 		('J.K Rowling', 'British'), 
-		('Andrea Hirate',null);
+		('Andrea Hirate',"");
 
 ALTER TABLE authors
 AUTO_INCREMENT=1
@@ -16,7 +16,7 @@ INSERT INTO books (isbn, title, author_id, published_year, genre, copies_avaliab
 VALUES (7040289780375, 'Ayah', 3, 2015, 'fiction', 15),
 		 (9780375704025, 'Bumi', 1, 2014, 'fantasy', 5),
 		 (8310371703024, 'Bulan', 1, 2015, 'fantasy', 3),
-		 (9780747532699, 'Harry Potter and the', 2, 1997, null, 10);
+		 (9780747532699, 'Harry Potter and the', 2, 1997, "" , 10);
 		 
 INSERT INTO books (isbn, title, author_id, published_year, genre, copies_avaliable)
 VALUES (7210301703022, 'The Running Grave', 2, 2016, 'fiction', 11);
@@ -27,7 +27,7 @@ AUTO_INCREMENT=1
 DESC members;
 SELECT * FROM members;
 INSERT INTO members (ferst_name, last_name, email, phone_number, join_date, membership_type)
-VALUES ('John', 'Doe', 'John.doe@example.com', NULL, 2023-04-29, NULL ),
+VALUES ('John', 'Doe', 'John.doe@example.com', NULL, 2023-04-29, "" ),
 		 ('Alice', 'Johnson', 'alice.johnson@example.com', 1231231231, 2023-05-01, 'Standar'),
 		 ('Bob', 'Williams', 'bob.williams@example.com', 3213214321, 2023-06-20, 'Premium');
 
@@ -65,7 +65,14 @@ where return_date IS NULL;
 SELECT * FROM members
 UPDATE members
 SET membership_type = 'standar'
+WHERE id=2;
+ 
+
+SELECT * FROM members
+UPDATE members
+SET membership_type = ""
 WHERE id=3;
+ 
  
 DESC members
 
